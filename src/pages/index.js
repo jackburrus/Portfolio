@@ -12,13 +12,24 @@ class App extends Component {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
+          backgroundColor: "#C7EFCF",
+          flexDirection: "column",
         }}
       >
+        <div>
+          <p>1 Project per week!</p>
+          <p>0/52</p>
+          <p>0 - Chemex App</p>
+        </div>
         <Terminal
           color="green"
           backgroundColor="black"
           barColor="black"
-          style={{ fontWeight: "bold", fontSize: "1em" }}
+          style={{
+            fontWeight: "bold",
+            fontSize: "1em",
+            height: "100vh",
+          }}
           commands={{
             "open-google": () =>
               window.open("https://www.google.com/", "_blank"),
