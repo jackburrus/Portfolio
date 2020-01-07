@@ -19,7 +19,8 @@ class App extends Component {
         <div>
           <p>1 Project per week!</p>
           <p>0/52</p>
-          <p>0 - Chemex App</p>
+          <p>X - Chemex App</p>
+          <p>X - Libra Wallet</p>
         </div>
         <Terminal
           color="green"
