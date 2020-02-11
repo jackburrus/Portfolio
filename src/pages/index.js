@@ -1,9 +1,6 @@
 import React, { Component } from "react"
-import Terminal from "terminal-in-react"
 
 class App extends Component {
-  showMsg = () => "Hello World"
-
   render() {
     return (
       <div
@@ -12,39 +9,13 @@ class App extends Component {
           justifyContent: "center",
           alignItems: "center",
           height: "100vh",
-          backgroundColor: "#C7EFCF",
+          backgroundColor: "#fff",
           flexDirection: "column",
         }}
       >
         <div>
-          <p>1 Project per week!</p>
-          <p>0/52</p>
-          <p>X - Chemex App</p>
-          <p>0 - Ethereum Wallet</p>
+          <a href="https://github.com/jackburrus">Github</a>
         </div>
-        <Terminal
-          color="green"
-          backgroundColor="black"
-          barColor="black"
-          style={{
-            fontWeight: "bold",
-            fontSize: "1em",
-            height: "100vh",
-          }}
-          commands={{
-            "open-google": () =>
-              window.open("https://www.google.com/", "_blank"),
-            showmsg: this.showMsg,
-            popup: () => alert("Terminal in React"),
-          }}
-          descriptions={{
-            "open-google": "opens google.com",
-            showmsg: "shows a message",
-            alert: "alert",
-            popup: "alert",
-          }}
-          msg="You can write anything here. Example - Hello! My name is Foo and I like Bar."
-        />
       </div>
     )
   }
