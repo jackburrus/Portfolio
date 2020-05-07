@@ -1,8 +1,6 @@
-import React, { Component } from "react"
-import "../styles/styles.css"
+import React, { Component } from 'react'
+import '../styles/styles.css'
 
-const HomeScreen = () => {
-  return <div>Hello Jacks Portfolio</div>
-}
+// const HomeScreen = () => <div>Hello Jacks Portfolio</div>
 
-export default HomeScreen
+// export default HomeScreen

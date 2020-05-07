@@ -1,40 +1,21 @@
-import React, { Component } from "react"
-import Lottie from "react-lottie"
-// import Turtle from "../../assets/Turtle_Clay.svg"
-import Turtle from "../../assets/data.json"
+import React, { Component } from 'react'
+
+import Underline from '../../assets/headerUnderline.svg'
 
 class App extends Component {
   render() {
-    const defaultOptions = {
-      loop: true,
-      autoplay: true,
-      animationData: Turtle,
-      rendererSettings: {
-        preserveAspectRatio: "xMidYMid slice",
-      },
-    }
     return (
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-          backgroundColor: "#92CCDD",
-          flexDirection: "column",
-          borderStyle: "dotted",
-        }}
-      >
-        <div
-          style={{
-            // borderStyle: "dotted",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-          }}
-        >
-          <a href="https://github.com/jackburrus"> Github!!</a>
-          <Lottie options={defaultOptions} height={100} width={100} />
+      <div className="container">
+        <div className="headerStyles">
+          <p className="name">Jack Burrus</p>
+
+          <Underline className="headerUnderline" />
+        </div>
+        <div className="worksContainer">
+          <p>Works</p>
+        </div>
+        <div className="mountainsContainer">
+          <p>Mountains</p>
         </div>
       </div>
     )
