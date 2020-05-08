@@ -67,7 +67,7 @@ body {
   font-size: 96px;
   color: white;
   /* font-family: sans-serif; */
-  font-family: "Slabo";
+  font-family: "Slabo27px-Regular";
 }
 .title {
   position: relative;
@@ -96,7 +96,7 @@ body {
   flex: 3;
 }
 .backgroundMountains {
-  /* position: absolute; */
+  position: absolute;
 
   height: 100%;
   width: 100%;
