@@ -16,8 +16,12 @@ class App extends Component {
               <div className="title">Mobile and Web Developer</div>
             </div>
             <div className="iconContainer">
-              <Github />
-              <LinkedIn />
+              <a href="https://github.com/jackburrus">
+                <Github />
+              </a>
+              <a href="https://www.linkedin.com/in/jamesburrus/">
+                <LinkedIn />
+              </a>
             </div>
           </div>
 
