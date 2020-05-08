@@ -1,14 +1,26 @@
 import React, { Component } from 'react'
 
 import Underline from '../../assets/headerUnderline.svg'
+import Github from '../../assets/github.svg'
+import LinkedIn from '../../assets/LinkedIn.svg'
+import BackgroundMountains from '../../assets/backgroundmtns.svg'
 
 class App extends Component {
   render() {
     return (
       <div className="container">
         <div className="headerStyles">
-          <div className="name">Jack Burrus</div>
-          <div className="title">Mobile and Web Developer</div>
+          <div className="nameAndIconsContainer">
+            <div className="nameAndTitle">
+              <div className="name">Jack Burrus</div>
+              <div className="title">Mobile and Web Developer</div>
+            </div>
+            <div className="iconContainer">
+              <Github />
+              <LinkedIn />
+            </div>
+          </div>
+
           <Underline className="headerUnderline" />
         </div>
 
@@ -16,7 +28,7 @@ class App extends Component {
           <p>Works</p>
         </div>
         <div className="mountainsContainer">
-          <p>Mountains</p>
+          <BackgroundMountains className="backgroundMountains" />
         </div>
       </div>
     )
