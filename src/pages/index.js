@@ -9,6 +9,10 @@ class App extends Component {
   render() {
     return (
       <div className="container">
+        <div className="parent">
+          <p>Hello, I'm a child...</p>
+          <p className="hidden">..and so am I but I'm hidden.</p>
+        </div>
         <div className="headerStyles">
           <div className="nameAndIconsContainer">
             <div className="nameAndTitle">
@@ -28,9 +32,7 @@ class App extends Component {
           <Underline className="headerUnderline" />
         </div>
 
-        <div className="worksContainer">
-          <p>Works</p>
-        </div>
+        <div className="worksContainer" />
         <div className="mountainsContainer">
           <BackgroundMountains className="backgroundMountains" />
         </div>
