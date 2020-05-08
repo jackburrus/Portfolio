@@ -1,6 +1,11 @@
 @font-face {
   font-family: "Slabo";
-  src: url("../../static/fonts//Slabo/Slabo_27px/Slabo27px-Regular.ttf");
+  src: url("../../static/fonts/Slabo/Slabo_27px/Slabo27px-Regular.ttf")
+    format("ttf");
+}
+@font-face {
+  font-family: "FiraSans";
+  src: url("../../static/fonts/Fira/FiraSans-Light.ttf") format("ttf");
 }
 
 body {
@@ -10,7 +15,7 @@ body {
   margin: 0;
 }
 .container {
-  display: flex;
+  /* display: flex; */
   justify-content: space-around;
 
   height: 100vh;
@@ -20,18 +25,19 @@ body {
   border-style: dotted;
 }
 .headerStyles {
+  padding-left: 30px;
   /* border: 5px solid; */
-  display: flex;
-
-  align-items: flex-start;
-  flex-direction: column;
+  /* align-items: flex-start; */
+  /* flex-direction: column; */
   width: 100%;
   flex: 2;
 }
 .headerUnderline {
+  width: 100%;
   /* border: 1px solid; */
-
-  width: 80%;
+  position: relative;
+  bottom: 30px;
+  /* right: 50px; */
 }
 .name {
   display: flex;
@@ -39,13 +45,21 @@ body {
   /* border: 1px solid; */
   font-size: 96px;
   color: white;
-  font-family: Slabo;
+  /* font-family: sans-serif; */
+  font-family: "Slabo";
+}
+.title {
+  position: relative;
+  bottom: 25px;
+  padding-left: 20px;
+  font-family: "FiraSans";
+
+  /* border: 1px solid; */
 }
 .worksContainer {
-  /* border: 1px solid; */
+  border: 1px solid;
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
+
   width: 100%;
   flex: 2;
 }

@@ -7,10 +7,11 @@ class App extends Component {
     return (
       <div className="container">
         <div className="headerStyles">
-          <p className="name">Jack Burrus</p>
-
+          <div className="name">Jack Burrus</div>
+          <div className="title">Mobile and Web Developer</div>
           <Underline className="headerUnderline" />
         </div>
+
         <div className="worksContainer">
           <p>Works</p>
         </div>
