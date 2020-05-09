@@ -18,7 +18,6 @@ import MobileWorks from '../components/MobileWorks'
 import useViewport from '../../static/hooks/useViewport.js'
 
 const App = () => {
-  const test = 'test'
   const { width } = useViewport()
   const breakpoint = 620
   return (
