@@ -4,15 +4,16 @@ import Underline from '../../assets/headerUnderline.svg'
 import Github from '../../assets/github.svg'
 import LinkedIn from '../../assets/LinkedIn.svg'
 import BackgroundMountains from '../../assets/backgroundmtns.svg'
+import WorksRow from '../components/WorksRow'
 
 class App extends Component {
   render() {
     return (
       <div className="container">
-        <div className="parent">
-          <p>Hello, I'm a child...</p>
-          <p className="hidden">..and so am I but I'm hidden.</p>
-        </div>
+        <button className="hover-button">
+          <span className="hover-button--off">Default</span>
+          <span className="hover-button--on">Hover!</span>
+        </button>
         <div className="headerStyles">
           <div className="nameAndIconsContainer">
             <div className="nameAndTitle">
@@ -32,7 +33,18 @@ class App extends Component {
           <Underline className="headerUnderline" />
         </div>
 
-        <div className="worksContainer" />
+        <div className="worksContainer">
+          <div className="column">
+            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
+            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
+            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
+          </div>
+          <div className="column">
+            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
+            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
+            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
+          </div>
+        </div>
         <div className="mountainsContainer">
           <BackgroundMountains className="backgroundMountains" />
         </div>
