@@ -67,7 +67,7 @@ body {
   /* border: 1px solid; */
 }
 .worksContainer {
-  /* border: 1px solid; */
+  border: 1px solid;
   display: flex;
   justify-content: space-around;
   width: 100%;
@@ -75,7 +75,7 @@ body {
   z-index: 1;
 }
 .column {
-  /* border: 1px solid green; */
+  border: 3px solid green;
 
   display: flex;
   flex: 1;
