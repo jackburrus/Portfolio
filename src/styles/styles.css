@@ -70,7 +70,6 @@ body {
   /* border: 1px solid; */
   display: flex;
   justify-content: space-around;
-
   flex: 2;
 
   z-index: 1;
