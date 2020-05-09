@@ -74,6 +74,7 @@ a:hover {
   /* border: 1px solid blue; */
   margin-left: 10px;
   margin-right: 10px;
-  justify-content: space-around;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
