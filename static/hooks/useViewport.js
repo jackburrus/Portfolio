@@ -1,14 +1,29 @@
-import React from 'react'
+import { useState, useEffect } from 'react'
 
 export default function useViewport() {
-  const [width, setWidth] = React.useState(window.innerWidth)
+  const isClient = typeof window === 'object'
 
-  React.useEffect(() => {
-    const handleWindowResize = () => setWidth(window.innerWidth)
-    window.addEventListener('resize', handleWindowResize)
-    return () => window.removeEventListener('resize', handleWindowResize)
-  }, [])
+  function getSize() {
+    return {
+      width: isClient ? window.innerWidth : undefined,
+      height: isClient ? window.innerHeight : undefined,
+    }
+  }
 
-  // Return the width so we can use it in our components
-  return { width }
+  const [windowSize, setWindowSize] = useState(getSize)
+
+  useEffect(() => {
+    if (!isClient) {
+      return false
+    }
+
+    function handleResize() {
+      setWindowSize(getSize())
+    }
+
+    window.addEventListener('resize', handleResize)
+    return () => window.removeEventListener('resize', handleResize)
+  }, []) // Empty array ensures that effect is only run on mount and unmount
+
+  return windowSize
 }
