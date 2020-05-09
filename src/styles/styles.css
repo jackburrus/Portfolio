@@ -1,17 +1,4 @@
-@font-face {
-  font-family: "Slabo";
-  src: url("../../static/fonts/Slabo/Slabo_27px/Slabo27px-Regular.ttf")
-    format("ttf");
-}
-@font-face {
-  font-family: "FiraSans";
-  src: url("../../static/fonts/Fira/FiraSans-Light.ttf") format("ttf");
-}
-@font-face {
-  font-family: "Modak";
-  src: url("../../static/fonts/Modak-Regular.ttf") format("ttf");
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Slabo+27px&display=swap");
 body {
   width: 100%;
   height: 100%;
@@ -67,13 +54,13 @@ body {
   font-size: 96px;
   color: white;
   /* font-family: sans-serif; */
-  font-family: "Slabo27px-Regular";
+  font-family: "Slabo 27px", serif;
 }
 .title {
   position: relative;
   bottom: 25px;
   padding-left: 20px;
-  font-family: "FiraSans-Light";
+  font-family: "Fira Sans", sans-serif;
 
   font-size: 30px;
   color: #6f6e6e;

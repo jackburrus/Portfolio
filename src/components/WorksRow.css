@@ -8,30 +8,68 @@
   src: url("../../static/fonts/Modak-Regular.ttf") format("ttf");
 }
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Slabo+27px&display=swap");
+a {
+  color: #0060b6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
+}
 .projectName {
   color: white;
   font-size: 30px;
   font-family: "Slabo 27px", serif;
 }
-.description {
+.projectName-active {
   color: white;
+  font-size: 30px;
+  font-family: "Slabo 27px", serif;
+  text-decoration: underline;
+}
+
+.description {
+  border: 1px solid;
+  color: black;
   font-size: 18px;
   font-family: "Fira Sans", sans-serif;
+  padding-top: 10px;
+  /* flex: 1; */
+  margin-left: 10px;
 }
+.description-active {
+  color: black;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+
 .rowContainer {
-  /* border: 1px solid; */
+  border: 1px solid red;
   display: flex;
   align-items: center;
 }
-.usageIconsContainer {
-  /* border: 3px solid; */
+.rowStyles {
+  /* border: 1px solid; */
   display: flex;
-  justify-content: space-between;
-  width: 30%;
+  align-items: center;
+  justify-content: space-around;
+  width: 75%;
+}
+
+.usageIconsContainer {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  justify-content: flex-start;
+  border: 1px solid;
 }
 .ic {
-  /* border: 1px solid; */
+  border: 1px solid blue;
   width: 100%;
-  display: flex;
   justify-content: space-around;
+  align-items: center;
 }

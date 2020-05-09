@@ -42,14 +42,20 @@ class App extends Component {
               description="Chrome extension for OSINT analysts"
               rowStyles="rowStyles"
               icons={[<AWS />, <JavaScript />, <Python />, <Serverless />]}
+              link="https://www.linkedin.com/in/jamesburrus/"
             />
-            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
+            <WorksRow
+              name="Dollop"
+              description="Recipe app"
+              rowStyles="rowStyles"
+              icons="icons"
+            />
             <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
           </div>
           <div className="column">
+            {/* <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
             <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
-            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
-            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
+            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" /> */}
           </div>
         </div>
         <div className="mountainsContainer">
