@@ -1,0 +1,30 @@
+/* @font-face {
+  font-family: "Slabo";
+  src: url("../../static/fonts/Slabo/Slabo_27px/Slabo27px-Regular.ttf")
+    format("ttf");
+} */
+@font-face {
+  font-family: "Modak";
+  src: url("../../static/fonts/Modak-Regular.ttf") format("ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Slabo+27px&display=swap");
+.projectName {
+  color: white;
+  font-size: 30px;
+  font-family: "Slabo 27px", serif;
+}
+.description {
+  color: white;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+}
+.rowContainer {
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+}
+.usageIconsContainer {
+  border: 3px solid;
+  display: flex;
+  width: 100%;
+}

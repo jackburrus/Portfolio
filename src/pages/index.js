@@ -10,10 +10,6 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <button className="hover-button">
-          <span className="hover-button--off">Default</span>
-          <span className="hover-button--on">Hover!</span>
-        </button>
         <div className="headerStyles">
           <div className="nameAndIconsContainer">
             <div className="nameAndTitle">
@@ -35,7 +31,12 @@ class App extends Component {
 
         <div className="worksContainer">
           <div className="column">
-            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
+            <WorksRow
+              name="OSINT Gadget"
+              description="Chrome extension for OSINT analysts"
+              rowStyles="rowStyles"
+              icons={[<Github />, <LinkedIn />, <Github />]}
+            />
             <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
             <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
           </div>

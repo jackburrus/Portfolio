@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import useHover from '../../static/hooks/useHover'
+import './WorksRow.css'
 
 function WorksRow(props) {
   const [hoverRef, isHovered] = useHover()
@@ -18,9 +19,16 @@ function WorksRow(props) {
     // >
     //   {isHovered ? '😁' : '☹️'}
     // </div>
-    <div ref={hoverRef} className={props.rowStyles}>
-      <div>{props.name}</div>
-      {isHovered ? <div>{props.icons}</div> : null}
+    <div className="rowContainer">
+      <div ref={hoverRef} className={props.rowStyles}>
+        <div className="projectName">{props.name}</div>
+        <div className="description">{props.description}</div>
+      </div>
+      <div>
+        {isHovered ? (
+          <div className="usageIconsContainer">{props.icons}</div>
+        ) : null}
+      </div>
     </div>
 
     //   <div>{props.name}</div>
