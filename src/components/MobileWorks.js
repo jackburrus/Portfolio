@@ -17,16 +17,19 @@ export default function MobileWorks() {
         name="OSINT Project"
         description="Chrome extension for OSINT analysts"
         icons={[<AWS />, <JavaScript />, <Python />, <Serverless />]}
+        link="https://www.github.com/jackburrus"
       />
       <MobileWorksRow
         name="OSINT Project"
         description="Chrome extension for OSINT analysts"
         icons={[<JavaScript />, <Expo />]}
+        link="https://www.github.com/jackburrus"
       />
       <MobileWorksRow
         name="OSINT Project"
         description="Chrome extension for OSINT analysts"
         icons={[<JavaScript />, <Expo />]}
+        link="https://www.github.com/jackburrus"
       />
     </div>
   )

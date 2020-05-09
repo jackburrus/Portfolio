@@ -49,19 +49,21 @@ const App = () => {
               description="Chrome extension for OSINT analysts"
               rowStyles="rowStyles"
               icons={[<AWS />, <JavaScript />, <Python />, <Serverless />]}
-              link="https://www.linkedin.com/in/jamesburrus/"
+              link="https://www.github.com/jackburrus"
             />
             <WorksRow
               name="Dollop"
               description="Recipe app"
               rowStyles="rowStyles"
               icons={[<JavaScript />, <Expo />]}
+              link="https://www.github.com/jackburrus"
             />
             <WorksRow
               name="Coinbase Clone"
               description="Just what it sounds like"
               rowStyles="rowStyles"
               icons={[<JavaScript />, <Expo />]}
+              link="https://www.github.com/jackburrus"
             />
           </div>
         </div>
