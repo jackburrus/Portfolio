@@ -50,16 +50,14 @@ class App extends Component {
               name="Dollop"
               description="Recipe app"
               rowStyles="rowStyles"
-              // icons={[<Expo />, <ReactIcon />]}
-              icons="icons"
-              link="https://www.linkedin.com/in/jamesburrus/"
+              icons={[<JavaScript />, <Expo />]}
             />
-            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
-          </div>
-          <div className="column">
-            {/* <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
-            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
-            <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" /> */}
+            <WorksRow
+              name="Coinbase Clone"
+              description="Just what it sounds like"
+              rowStyles="rowStyles"
+              icons={[<JavaScript />, <Expo />]}
+            />
           </div>
         </div>
         <div className="mountainsContainer">

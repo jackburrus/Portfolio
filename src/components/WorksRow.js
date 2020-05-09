@@ -21,7 +21,10 @@ function WorksRow(props) {
         <div className={projectName}>{props.name}</div>
         <div className={descriptionName}>{props.description}</div>
         <div className="usageIconsContainer">
-          {isHovered ? <div className="ic">{props.icons}</div> : null}
+          {/* {isHovered ? <div className="ic">{props.icons}</div> : null} */}
+          {isHovered
+            ? props.icons.map(i => <div className="ic">{i}</div>)
+            : null}
         </div>
       </a>
     </div>

@@ -76,11 +76,13 @@ body {
   z-index: 1;
 }
 .column {
-  /* border: 1px solid; */
-  width: 40%;
+  /* border: 1px solid green; */
+
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .mountainsContainer {
