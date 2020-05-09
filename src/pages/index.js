@@ -10,6 +10,8 @@ import Python from '../../assets/icons/python.svg'
 import Serverless from '../../assets/icons/serverless.svg'
 import JavaScript from '../../assets/icons/javascript.svg'
 import BackgroundMountains from '../../assets/backgroundmtns.svg'
+import ReactIcon from '../../assets/icons/react.svg'
+import Expo from '../../assets/icons/Expo.svg'
 import WorksRow from '../components/WorksRow'
 
 class App extends Component {
@@ -48,7 +50,9 @@ class App extends Component {
               name="Dollop"
               description="Recipe app"
               rowStyles="rowStyles"
+              // icons={[<Expo />, <ReactIcon />]}
               icons="icons"
+              link="https://www.linkedin.com/in/jamesburrus/"
             />
             <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
           </div>
