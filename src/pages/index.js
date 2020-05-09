@@ -13,30 +13,35 @@ import BackgroundMountains from '../../assets/backgroundmtns.svg'
 import ReactIcon from '../../assets/icons/react.svg'
 import Expo from '../../assets/icons/Expo.svg'
 import WorksRow from '../components/WorksRow'
+import MobileWorks from '../components/MobileWorks'
 
-class App extends Component {
-  render() {
-    return (
-      <div className="container">
-        <div className="headerStyles">
-          <div className="nameAndIconsContainer">
-            <div className="nameAndTitle">
-              <div className="name">Jack Burrus</div>
-              <div className="title">Mobile and Web Developer</div>
-            </div>
-            <div className="iconContainer">
-              <a href="https://github.com/jackburrus">
-                <Github />
-              </a>
-              <a href="https://www.linkedin.com/in/jamesburrus/">
-                <LinkedIn />
-              </a>
-            </div>
+import useViewport from '../../static/hooks/useViewport.js'
+
+const App = () => {
+  const test = 'test'
+  const { width } = useViewport()
+  const breakpoint = 620
+  return (
+    <div className="container">
+      <div className="headerStyles">
+        <div className="nameAndIconsContainer">
+          <div className="nameAndTitle">
+            <div className="name">Jack Burrus</div>
+            <div className="title">Mobile and Web Developer</div>
           </div>
-
-          <Underline className="headerUnderline" />
+          <div className="iconContainer">
+            <a href="https://github.com/jackburrus">
+              <Github />
+            </a>
+            <a href="https://www.linkedin.com/in/jamesburrus/">
+              <LinkedIn />
+            </a>
+          </div>
         </div>
 
+        <Underline className="headerUnderline" />
+      </div>
+      {width > breakpoint ? (
         <div className="worksContainer">
           <div className="column">
             <WorksRow
@@ -60,18 +65,15 @@ class App extends Component {
             />
           </div>
         </div>
-        <div className="mountainsContainer">
-          <BackgroundMountains className="backgroundMountains" />
-        </div>
+      ) : (
+        <MobileWorks />
+      )}
+
+      <div className="mountainsContainer">
+        <BackgroundMountains className="backgroundMountains" />
       </div>
-    )
-  }
+    </div>
+  )
 }
-
-// const App = () => {
-//   return (
-
-//   )
-// }
 
 export default App
