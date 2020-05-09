@@ -5,29 +5,19 @@ import './WorksRow.css'
 
 function WorksRow(props) {
   const [hoverRef, isHovered] = useHover()
+
+  function Icons(props) {
+    const listIcons = props.icons.map(i => <div>{i}</div>)
+    return <ul>{listIcons}</ul>
+  }
   return (
-    // <div
-    //   ref={hoverRef}
-    //   style={{
-    //     color: 'white',
-    //     padding: '8rem',
-    //     width: '12rem',
-    //     textAlign: 'center',
-    //     fontSize: '5rem',
-    //     backgroundColor: isHovered ? '#00e3e3' : '#ccc',
-    //   }}
-    // >
-    //   {isHovered ? '😁' : '☹️'}
-    // </div>
     <div className="rowContainer">
       <div ref={hoverRef} className={props.rowStyles}>
         <div className="projectName">{props.name}</div>
         <div className="description">{props.description}</div>
       </div>
-      <div>
-        {isHovered ? (
-          <div className="usageIconsContainer">{props.icons}</div>
-        ) : null}
+      <div className="usageIconsContainer">
+        {isHovered ? <div className="ic">{props.icons}</div> : null}
       </div>
     </div>
 

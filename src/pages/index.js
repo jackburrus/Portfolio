@@ -1,8 +1,14 @@
 import React, { Component } from 'react'
 
 import Underline from '../../assets/headerUnderline.svg'
+
+// icons
 import Github from '../../assets/github.svg'
 import LinkedIn from '../../assets/LinkedIn.svg'
+import AWS from '../../assets/icons/amazonaws.svg'
+import Python from '../../assets/icons/python.svg'
+import Serverless from '../../assets/icons/serverless.svg'
+import JavaScript from '../../assets/icons/javascript.svg'
 import BackgroundMountains from '../../assets/backgroundmtns.svg'
 import WorksRow from '../components/WorksRow'
 
@@ -35,7 +41,7 @@ class App extends Component {
               name="OSINT Gadget"
               description="Chrome extension for OSINT analysts"
               rowStyles="rowStyles"
-              icons={[<Github />, <LinkedIn />, <Github />]}
+              icons={[<AWS />, <JavaScript />, <Python />, <Serverless />]}
             />
             <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
             <WorksRow name="Work 1" rowStyles="rowStyles" icons="icons" />
