@@ -4,7 +4,7 @@ import Underline from '../../assets/headerUnderline.svg'
 
 // icons
 import Github from '../../assets/github.svg'
-import LinkedIn from '../../assets/LinkedIn.svg'
+import LinkedIn from '../../assets/linkedin.svg'
 import AWS from '../../assets/icons/amazonaws.svg'
 import Python from '../../assets/icons/python.svg'
 import Serverless from '../../assets/icons/serverless.svg'
