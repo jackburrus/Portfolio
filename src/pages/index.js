@@ -59,10 +59,10 @@ const App = () => {
             />
             <WorksRow
               name="Coinbase Clone"
-              description="Just what it sounds like"
+              description="A Coinbase clone made entirely in React Native"
               rowStyles="rowStyles"
               icons={[<JavaScript />, <Expo />]}
-              link="https://www.github.com/jackburrus"
+              link="https://github.com/jackburrus/coinbaseClone"
             />
           </div>
         </div>

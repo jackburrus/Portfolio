@@ -20,16 +20,16 @@ export default function MobileWorks() {
         link="https://www.github.com/jackburrus"
       />
       <MobileWorksRow
-        name="OSINT Project"
-        description="Chrome extension for OSINT analysts"
+        name="Dollop"
+        description="Recipe app"
         icons={[<JavaScript />, <Expo />]}
         link="https://www.github.com/jackburrus"
       />
       <MobileWorksRow
-        name="OSINT Project"
-        description="Chrome extension for OSINT analysts"
+        name="Coinbase Clone"
+        description="Just what it sounds like"
         icons={[<JavaScript />, <Expo />]}
-        link="https://www.github.com/jackburrus"
+        link="https://github.com/jackburrus/coinbaseClone"
       />
     </div>
   )
