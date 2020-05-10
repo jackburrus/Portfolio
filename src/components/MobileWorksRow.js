@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import useHover from '../../static/hooks/useHover'
-import './MobileWorksRow.css'
+import '../styles/styles.css'
 
 function WorksRow(props) {
   const [hoverRef, isHovered] = useHover()
@@ -12,7 +12,7 @@ function WorksRow(props) {
     descriptionName += ' mobile-description-active'
   }
   function Icons(props) {
-    const listIcons = props.icons.map(i => <div>{i}</div>)
+    const listIcons = props.icons.map((i) => <div>{i}</div>)
     return <ul>{listIcons}</ul>
   }
   return (
@@ -22,7 +22,7 @@ function WorksRow(props) {
         <div className={descriptionName}>{props.description}</div>
         <div className="mobile-iconContainer">
           {isHovered
-            ? props.icons.map(i => <div className="mobile-ic">{i}</div>)
+            ? props.icons.map((i) => <div className="mobile-ic">{i}</div>)
             : null}
         </div>
       </div>

@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import '../styles/styles.css'
+
+import React from 'react'
 
 import Underline from '../../assets/headerUnderline.svg'
 
@@ -40,35 +42,35 @@ const App = () => {
 
         <Underline className="headerUnderline" />
       </div>
-      {width > breakpoint ? (
-        <div className="worksContainer">
-          <div className="column">
-            <WorksRow
-              name="OSINT Gadget"
-              description="Chrome extension for OSINT analysts"
-              rowStyles="rowStyles"
-              icons={[<AWS />, <JavaScript />, <Python />, <Serverless />]}
-              link="https://www.github.com/jackburrus"
-            />
-            <WorksRow
-              name="Dollop"
-              description="Recipe app"
-              rowStyles="rowStyles"
-              icons={[<JavaScript />, <Expo />]}
-              link="https://www.github.com/jackburrus"
-            />
-            <WorksRow
-              name="Coinbase Clone"
-              description="A Coinbase clone made entirely in React Native"
-              rowStyles="rowStyles"
-              icons={[<JavaScript />, <Expo />]}
-              link="https://github.com/jackburrus/coinbaseClone"
-            />
-          </div>
+      {/* {width > breakpoint ? ( */}
+      <div className="worksContainer">
+        <div className="column">
+          <WorksRow
+            name="OSINT Gadget"
+            description="Chrome extension for OSINT analysts"
+            rowStyles="rowStyles"
+            icons={[<AWS />, <JavaScript />, <Python />, <Serverless />]}
+            link="https://www.github.com/jackburrus"
+          />
+          <WorksRow
+            name="Dollop"
+            description="Recipe app"
+            rowStyles="rowStyles"
+            icons={[<JavaScript />, <Expo />]}
+            link="https://www.github.com/jackburrus"
+          />
+          <WorksRow
+            name="Coinbase Clone"
+            description="A Coinbase clone made entirely in React Native"
+            rowStyles="rowStyles"
+            icons={[<JavaScript />, <Expo />]}
+            link="https://github.com/jackburrus/coinbaseClone"
+          />
         </div>
-      ) : (
-        <MobileWorks />
-      )}
+      </div>
+      {/* ) : ( */}
+      {/* <MobileWorks />
+      )} */}
 
       <div className="mountainsContainer">
         <BackgroundMountains className="backgroundMountains" />

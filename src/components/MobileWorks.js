@@ -1,5 +1,6 @@
 import React from 'react'
-import './MobileWorksRow.css'
+// import './MobileWorksRow.css'
+import '../styles/styles.css'
 import MobileWorksRow from './MobileWorksRow'
 import AWS from '../../assets/icons/amazonaws.svg'
 import Python from '../../assets/icons/python.svg'
