@@ -27,7 +27,7 @@ export default function MobileWorks() {
       />
       <MobileWorksRow
         name="Coinbase Clone"
-        description="Just what it sounds like"
+        description="A Coinbase clone made entirely in React Native"
         icons={[<JavaScript />, <Expo />]}
         link="https://github.com/jackburrus/coinbaseClone"
       />
