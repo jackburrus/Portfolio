@@ -1,5 +1,6 @@
 import React from 'react'
-import './MobileWorksRow.css'
+// import './MobileWorksRow.css'
+import '../styles/styles.css'
 import MobileWorksRow from './MobileWorksRow'
 import AWS from '../../assets/icons/amazonaws.svg'
 import Python from '../../assets/icons/python.svg'
@@ -20,16 +21,16 @@ export default function MobileWorks() {
         link="https://www.github.com/jackburrus"
       />
       <MobileWorksRow
-        name="OSINT Project"
-        description="Chrome extension for OSINT analysts"
+        name="Dollop"
+        description="Recipe app"
         icons={[<JavaScript />, <Expo />]}
         link="https://www.github.com/jackburrus"
       />
       <MobileWorksRow
-        name="OSINT Project"
-        description="Chrome extension for OSINT analysts"
+        name="Coinbase Clone"
+        description="A Coinbase clone made entirely in React Native"
         icons={[<JavaScript />, <Expo />]}
-        link="https://www.github.com/jackburrus"
+        link="https://github.com/jackburrus/coinbaseClone"
       />
     </div>
   )

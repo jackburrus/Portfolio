@@ -66,23 +66,6 @@ body {
 
   /* border: 1px solid; */
 }
-.worksContainer {
-  /* border: 1px solid; */
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  flex: 2;
-  z-index: 1;
-}
-.column {
-  /* border: 1px solid green; */
-
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
 
 .mountainsContainer {
   /* border: 1px solid; */
@@ -92,16 +75,230 @@ body {
   width: 100%;
   flex: 3;
 }
-.backgroundMountains {
-  position: absolute;
 
-  height: 100%;
-  width: 100%;
-}
 .rowStyles {
   /* border: 1px solid; */
   display: flex;
   align-items: center;
   justify-content: space-around;
   width: 75%;
+}
+
+/* @font-face {
+  font-family: "Slabo";
+  src: url("../../static/fonts/Slabo/Slabo_27px/Slabo27px-Regular.ttf")
+    format("ttf");
+} */
+@font-face {
+  font-family: "Modak";
+  src: url("../../static/fonts/Modak-Regular.ttf") format("ttf");
+}
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Slabo+27px&display=swap");
+a {
+  color: #0060b6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
+}
+.projectName {
+  color: white;
+  font-size: 30px;
+  font-family: "Slabo 27px", serif;
+}
+.projectName-active {
+  color: white;
+  font-size: 30px;
+  font-family: "Slabo 27px", serif;
+  text-decoration: underline;
+}
+
+.description {
+  /* border: 1px solid; */
+  color: grey;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  padding-top: 10px;
+
+  margin-left: 10px;
+}
+.description-active {
+  color: #6f6e6e;
+  font-size: 18px;
+  font-family: "Fira Sans", sans-serif;
+  text-decoration: underline;
+  padding-top: 10px;
+}
+
+.rowContainer {
+  /* border: 1px solid red; */
+  display: flex;
+  width: 70%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.rowStylesI {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.usageIconsContainer {
+  display: flex;
+
+  justify-content: space-around;
+  align-items: flex-end;
+  /* border: 1px solid green; */
+  margin-left: 10px;
+}
+.ic {
+  /* border: 1px solid blue; */
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: #0060b6;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00a0c6;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.column {
+  /* border: 3px solid green; */
+
+  display: flex;
+  flex: 2;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.worksContainer {
+  /* border: 5px solid purple; */
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+
+  z-index: 1;
+}
+.backgroundMountains {
+  position: absolute;
+
+  height: 100%;
+  width: 100%;
+}
+@media only screen and (max-width: 600px) {
+  .rowContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .rowStylesI {
+    /* border: 1px solid; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .name {
+    display: flex;
+    flex: 1;
+    /* border: 1px solid; */
+    font-size: 80px;
+    color: white;
+    /* font-family: sans-serif; */
+    font-family: "Slabo 27px", serif;
+  }
+  .title {
+    position: relative;
+    margin-top: 10px;
+    bottom: 25px;
+    padding-left: 20px;
+    font-family: "Fira Sans", sans-serif;
+
+    font-size: 20px;
+    color: #6f6e6e;
+
+    /* border: 1px solid; */
+  }
+  .projectName {
+    color: white;
+    font-size: 18px;
+    font-family: "Slabo 27px", serif;
+  }
+  .projectName-active {
+    color: white;
+    font-size: 18px;
+    font-family: "Slabo 27px", serif;
+    text-decoration: underline;
+  }
+
+  .description {
+    /* border: 1px solid; */
+    color: grey;
+    font-size: 12px;
+    font-family: "Fira Sans", sans-serif;
+    padding-top: 10px;
+
+    margin-left: 10px;
+  }
+  .description-active {
+    color: #6f6e6e;
+    font-size: 12px;
+    font-family: "Fira Sans", sans-serif;
+    text-decoration: underline;
+    padding-top: 10px;
+  }
+
+  .rowContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .rowStyles {
+    /* border: 1px solid; */
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .usageIconsContainer {
+    display: flex;
+    flex-direction: row;
+    /* border: 1px solid green; */
+  }
+  .ic {
+    /* border: 1px solid blue; */
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .iconContainer {
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
 }
